@@ -1,12 +1,11 @@
-"""
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
-You can return the answer in any order.
-"""
-
 def two_sums(target, nums):
+    """
+    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+    You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+    You can return the answer in any order.
+    """
     index1 = 0
     index2 = 0
     for i in range(0, len(nums)):
@@ -18,7 +17,6 @@ def two_sums(target, nums):
                 return
             elif i >= len(nums)-1 and index2 == 0:
                 print("No values available")
-
 
 test_array = [2, 4, 5, 7]
 target_value = 11
